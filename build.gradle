@@ -224,10 +224,10 @@ subprojects {
         buildTasks = []
         failOnSnapshotDependencies = true
         versionPropertyFile = 'gradle.properties'
-        tagTemplate = 'v${version}'
+        tagTemplate = 'v${version}-central'
         git {
             // To release from any branch
-            requireBranch = "release-${moduleVersion}"
+            requireBranch = null
             pushToRemote = 'origin'
         }
     }
